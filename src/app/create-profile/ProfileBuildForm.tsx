@@ -72,15 +72,14 @@ export default function ProfileBuildForm() {
           <motion.div
             className="inline-block mb-4"
             animate={{
-              scale: 1.5,
+              scale: [1, 1.5, 1],
             }}
             transition={{
-              duration: 2, 
-              repeat: Infinity, 
+              duration: 2,
+              repeat: Infinity,
               repeatType: "loop",
             }}
           >
-           
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
@@ -100,12 +99,17 @@ export default function ProfileBuildForm() {
             Profile Successfully Created!
           </h2>
 
-          <button
+          <motion.button
             onClick={createAnotherProfile}
             className="px-6 py-2 bg-[#cbe6ff] text-[#1f1e27] rounded-lg"
+            whileHover={{
+              scale: 1.1,
+              backgroundColor: "#cbe6ff",
+              color: "#1f1e27",
+            }}
           >
             Create Another Profile
-          </button>
+          </motion.button>
         </div>
       </motion.div>
     );
@@ -133,6 +137,7 @@ export default function ProfileBuildForm() {
           variants={formVariants}
           initial="hidden"
           animate="visible"
+          noValidate
         >
           <motion.div className="flex flex-col" variants={inputVariants}>
             <label htmlFor="name" className="text-sm font-medium mb-1">

@@ -1,3 +1,22 @@
+# Profile Form Validation
+
+## Features
+- Validates name, email, phone, and password fields.
+- Password requirements:
+  - At least 8 characters.
+  - At least one uppercase letter.
+  - At least one lowercase letter.
+  - At least one number.
+  - At least one special character.
+- Displays error messages for invalid input.
+
+## Installation
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   npm install
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
