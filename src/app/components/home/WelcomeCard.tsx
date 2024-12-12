@@ -3,10 +3,11 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
-
+import Link from "next/link";
 const WelcomeCard = () => {
   return (
     <div className="w-screen h-screen flex items-center justify-center bg-[#1f1e27]">
+    
       <motion.div
         className="bg-[#1f1e27] border-4 border-[#cbe6ff] flex flex-col items-center justify-center text-2xl font-bold font-sans p-8 text-[#cbe6ff] rounded-3xl shadow-xl"
         initial={{ scale: 0.9, opacity: 0 }}
@@ -34,17 +35,19 @@ const WelcomeCard = () => {
         >
           Build Your Profile
         </motion.div>
-        <motion.button
-          className="px-6 py-2 mt-5 bg-transparent text-[#cbe6ff] font-sans text-sm border-2 border-[#cbe6ff] rounded-full transition-all duration-200 hover:bg-[#cbe6ff] hover:text-[#1f1e27]"
-          whileHover={{
-            scale: 1.1,
-            backgroundColor: "#cbe6ff",
-            color: "#1f1e27",
-          }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Start Building Now
-        </motion.button>
+        <Link href={"/create-profile"}>
+          <motion.button
+            className="px-6 py-2 mt-5 bg-transparent text-[#cbe6ff] font-sans text-sm border-2 border-[#cbe6ff] rounded-full transition-all duration-200 hover:bg-[#cbe6ff] hover:text-[#1f1e27]"
+            whileHover={{
+              scale: 1.1,
+              backgroundColor: "#cbe6ff",
+              color: "#1f1e27",
+            }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Start Building Now
+          </motion.button>
+        </Link>
       </motion.div>
     </div>
   );
