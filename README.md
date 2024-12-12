@@ -58,9 +58,10 @@ Before starting, ensure you have the following installed on your system:
 ## Usage
 
 1. Open the application in your browser.
-2. Fill in the form fields to create a profile.
-3. Click the **Submit** button. Upon successful submission, you’ll see a confirmation screen.
-4. Click **Create Another Profile** to reset the form and start over.
+2.click the button -> start building now
+3. Fill in the form fields to create a profile.
+4. Click the **Submit** button. Upon successful submission, you’ll see a confirmation screen.
+5. Click **Create Another Profile** to reset the form and start over.
 
 ---
 
@@ -110,5 +111,3 @@ If you face any issues or need support, feel free to reach out via email:
 [gopak9145@gmail.com](mailto:gopak9145@gmail.com)
 
 ---
-
-Place this **README.md** file in the same folder as the zip file before sharing it. Let me know if you'd like further refinements!
