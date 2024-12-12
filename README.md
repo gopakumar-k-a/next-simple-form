@@ -107,7 +107,7 @@ npm test
 ## Contact
 
 If you face any issues or need support, feel free to reach out via email:  
-[YourEmail@example.com](mailto:YourEmail@example.com)
+[gopak9145@gmail.com](mailto:gopak9145@gmail.com)
 
 ---
 
